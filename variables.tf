@@ -61,10 +61,12 @@ variable "vm_size" {
 
 variable "admin_username" {
   description = "Username for the Virtual Machine"
+default = "myVM"
 }
 
 variable "admin_password" {
   description = "Password for the Virtual Machine"
+default = "Ncpl@123456789"
 }
 
 variable "disable_password_auth" {
