@@ -1,3 +1,16 @@
+terraform {
+  backend "azurerm" {
+    storage_account_name = "cs2100320031fd4d797"
+    container_name       = "jenkins"
+    key                  = "prod.terraform.tfstate"
+
+    # rather than defining this inline, the Access Key can also be sourced
+    # from an Environment Variable - more information is available below.
+    access_key = "BDXJuZPi/6fbWDR3QZeNp4JkjMao0OqYlnUFOfIaHfuOkuI6HzcJo0DgS+UR66VDNVWG3uFw7T8d+AStIJNZnQ=="
+  }
+}
+
+
 resource "azurerm_resource_group" "example" {
   name     = var.resource_group_name
   location = var.location
