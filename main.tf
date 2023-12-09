@@ -1,7 +1,4 @@
-terraform {
-  required_version = ">= 0.12"
-  features {}
-}
+
 terraform {
   backend "azurerm" {
     storage_account_name = "cs2100320031fd4d797"
